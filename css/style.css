@@ -1,27 +1,10 @@
-*,
-*::before;
-*::after {
-    box-sizing: border-box;
-}
+@import: "./components/root.css"
 
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family:'Courier New', Courier, monospace;
-}
 
-body{
-    background-color: #a5a588;
-    color: #3a3a3a;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-        
-}
 
 header {
     background-color: #747eb1;
-    padding-top: 20px;
+    padding-top: 10px;
     color: white;
     margin: 0;
     font-size: 18px;
@@ -32,7 +15,6 @@ header {
     width: 100%;
     z-index: 1;
     box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.4);
-    text-shadow: 5px 5px 5px 5px black;
 }
 
 main {
@@ -65,44 +47,9 @@ p {
     text-align: center;
 }
 
-.navbar {
-    background-color: #747eb1;
-    position: fixed;
-    height: 60px;
-    bottom: 0;
-    left: 0px;
-    width: 100%;
-    box-shadow: 0px -5px 5px 1px rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-}
-
-.button {
-    height: 40px;
-    width: 80px;
-    border: 2px solid #3737377c;
-    border-radius: 20px;
-    background-color: #919191;
-    text-decoration: none;
-    box-shadow: 3px 5px 5px 1px rgba(0, 0, 0, 0.4);
-}
-
-.button__answer {
-    border: 2px solid #505050;
-    font-size: small;
-    border-radius: 20px;
-    width: 150px;
-    position: absolute;
-    left: calc(50% - 75px);
-    bottom: 80px;
-    background-color: #a1a1a1;
-}
-
 .card{
-    height: 250px;
-    width: 300px;
+    height: 300px;
+    width: 340px;
     top: 40px;
     bottom:40px;
     border: 2px solid #505050;
@@ -114,6 +61,63 @@ p {
     justify-content: center;
     box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
 }
+
+.navbar {
+    background-color: #747eb1;
+    position: fixed;
+    height: 60px;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    box-shadow: 0px -5px 5px 1px rgba(0, 0, 0, 0.4);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #747db5;
+    text-decoration: none;
+    border: 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.222);
+}
+
+.button__selected {
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8e96ce;
+    text-decoration: none;
+    border: 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.222);
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.2);
+    background-color: #8e96ce;
+}
+
+.button__answer {
+    border: none;
+    font-size: small;
+    border-radius: 20px;
+    width: 150px;
+    position: absolute;
+    left: calc(50% - 75px);
+    bottom: 80px;
+    background-color: #a1a1a1;
+}
+
+
 
 .card__bookmark {
     position: absolute;
@@ -155,8 +159,3 @@ p {
     border-color: red;
 }
 
-.button:hover {
-cursor: pointer;
-border-color: red;
-
-}

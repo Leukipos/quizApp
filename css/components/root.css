@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #a5a588;
+    color: #3a3a3a;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+        
+}
